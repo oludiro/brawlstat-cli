@@ -1,0 +1,47 @@
+{
+  "name": "brawlstat-cli",
+  "description": "Brwal stat website scarpper to show Brwal Star profile stat in command line",
+  "version": "0.0.0",
+  "author": "Oktavianus Ludiro",
+  "bin": {
+    "brawlstat-cli": "./bin/run"
+  },
+  "bugs": "https://github.com/oludiro/brawlstat-cli/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.19",
+    "@oclif/config": "^1.13.3",
+    "@oclif/plugin-help": "^2.2.1",
+    "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.17.5",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "eslint-config-oclif-typescript": "^0.1.0",
+    "ts-node": "^8.5.2",
+    "typescript": "^3.7.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/lib"
+  ],
+  "homepage": "https://github.com/oludiro/brawlstat-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "oclif": {
+    "bin": "brawlstat-cli"
+  },
+  "repository": "oludiro/brawlstat-cli",
+  "scripts": {
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf lib && tsc -b",
+    "test": "echo NO TESTS"
+  },
+  "types": "lib/index.d.ts"
+}
